@@ -1,13 +1,13 @@
 import java.io.*;
 
 /**
- * Main class demonstrating Java serialization concepts.
+ * Main class demonstrating Java serialisation concepts.
  * <p>
  * This class contains exercises that demonstrate:
  * <ul>
- *     <li>Basic serialization and deserialization of objects</li>
- *     <li>Use of transient fields to exclude sensitive data from serialization</li>
- *     <li>Custom serialization with writeObject and readObject methods</li>
+ *     <li>Basic serialisation and deserialisation of objects</li>
+ *     <li>Use of transient fields to exclude sensitive data from serialisation</li>
+ *     <li>Custom serialisation with writeObject and readObject methods</li>
  * </ul>
  * </p>
  *
@@ -20,7 +20,7 @@ public class Main {
     /**
      * The main entry point of the application.
      * <p>
-     * Executes all three serialization exercises in sequence.
+     * Executes all three serialisation exercises in sequence.
      * </p>
      *
      * @param args command line arguments (not used)
@@ -37,13 +37,13 @@ public class Main {
     }
 
     /**
-     * Exercise 1: Demonstrates basic serialization and deserialization.
+     * Exercise 1: Demonstrates basic serialisation and deserialisation.
      * <p>
-     * This method creates a Student object, serializes it to a file named "student.dat",
-     * and then deserializes it back to demonstrate the basic serialization process.
+     * This method creates a Student object, serialises it to a file named "student.dat",
+     * and then deserialises it back to demonstrate the basic serialisation process.
      * </p>
      * <p>
-     * The exercise shows how Java's built-in serialization mechanism can persist
+     * The exercise shows how Java's built-in serialisation mechanism can persist
      * objects to binary files and restore them later.
      * </p>
      */
@@ -70,17 +70,17 @@ public class Main {
     }
 
     /**
-     * Exercise 2: Demonstrates the use of transient fields in serialization.
+     * Exercise 2: Demonstrates the use of transient fields in serialisation.
      * <p>
      * This method creates a Student object with a password field marked as transient,
-     * serializes it, and then deserializes it to show that transient fields are
-     * not persisted during serialization.
+     * serialises it, and then deserialises it to show that transient fields are
+     * not persisted during serialisation.
      * </p>
      * <p>
      * Key learning points:
      * <ul>
-     *     <li>Transient fields are excluded from serialization</li>
-     *     <li>After deserialization, transient fields will have their default values (null for objects)</li>
+     *     <li>Transient fields are excluded from serialisation</li>
+     *     <li>After deserialisation, transient fields will have their default values (null for objects)</li>
      *     <li>Use transient for sensitive data like passwords that shouldn't be persisted</li>
      * </ul>
      * </p>
@@ -112,23 +112,23 @@ public class Main {
     }
 
     /**
-     * Exercise 3: Demonstrates custom serialization with writeObject and readObject methods.
+     * Exercise 3: Demonstrates custom serialisation with writeObject and readObject methods.
      * <p>
-     * This method shows how to implement custom serialization logic by overriding
-     * the default serialization behavior using private writeObject and readObject methods.
+     * This method shows how to implement custom serialisation logic by overriding
+     * the default serialisation behavior using private writeObject and readObject methods.
      * </p>
      * <p>
-     * The exercise demonstrates transforming the age field during serialization
-     * (multiplying by 2) and restoring it during deserialization (dividing by 2).
+     * The exercise demonstrates transforming the age field during serialisation
+     * (multiplying by 2) and restoring it during deserialisation (dividing by 2).
      * </p>
      * <p>
-     * Use cases for custom serialization include:
+     * Use cases for custom serialisation include:
      * <ul>
      *     <li>Data encryption for security</li>
-     *     <li>Data compression to reduce file size</li>
+     *     <li>Data compression to reduce file sise</li>
      *     <li>Version control for handling different object versions</li>
      *     <li>Data validation during read/write operations</li>
-     *     <li>Recalculating transient fields on deserialization</li>
+     *     <li>Recalculating transient fields on deserialisation</li>
      * </ul>
      * </p>
      */
